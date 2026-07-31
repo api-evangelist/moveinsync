@@ -1,0 +1,21 @@
+generated: '2026-07-20'
+method: searched
+source: live probes of moveinsync.com + api.moveinsync.com
+notes: >-
+  Probed the standard /.well-known/ discovery surface on the website and API
+  hosts. No discovery documents are published; the API host returns 403 (WAF)
+  for well-known paths and the website returns 404. Recorded for completeness —
+  absence is valid data.
+hosts:
+  - host: https://api.moveinsync.com
+    documents:
+      - path: /.well-known/security.txt
+        status: 403
+      - path: /.well-known/openid-configuration
+        status: 403
+      - path: /.well-known/oauth-authorization-server
+        status: 403
+  - host: https://moveinsync.com
+    documents:
+      - path: /.well-known/security.txt
+        status: 404

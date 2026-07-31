@@ -1,0 +1,29 @@
+generated: '2026-07-20'
+method: searched
+source: https://helpcenter.moveinsync.com/support/solutions/articles/1070000134486-rentlz-booking-management-api
+type: Webhooks
+notes: >-
+  MoveInSync documents a JWT-authenticated webhook/callback surface as part of
+  its Rentlz external-vendor integration. No AsyncAPI document is published;
+  this captures the documented event/callback surface only. Exact payload
+  schemas are not published on the public (bot-gated) help center, so only the
+  event families that are described in the vendor-integration articles are
+  recorded here — none are fabricated.
+auth:
+  scheme: bearer
+  bearerFormat: JWT
+  note: Same JWT obtained from https://api.moveinsync.com/auth/token
+events:
+  - name: cab-driver-assignment
+    direction: vendor-to-moveinsync
+    description: >-
+      Vendor sends cab and driver details assigned to a specific booking.
+  - name: driver-event-log
+    direction: vendor-to-moveinsync
+    description: >-
+      Logs driver-related events for a booking — duty start, duty end,
+      trip start, trip end.
+  - name: booking-response
+    direction: vendor-to-moveinsync
+    description: >-
+      Handles vendor response to a booking — acceptance or rejection.

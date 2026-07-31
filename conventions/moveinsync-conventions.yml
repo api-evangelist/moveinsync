@@ -1,0 +1,38 @@
+generated: '2026-07-20'
+method: searched
+source: https://helpcenter.moveinsync.com/support/solutions
+notes: >-
+  Cross-cutting request/response semantics for the MoveInSync integration API,
+  captured from the public help-center API articles (Auth API, Rentlz Booking
+  Management API). MoveInSync's API is an enterprise/vendor-integration surface
+  documented on its Freshdesk help center rather than a self-serve developer
+  portal; several conventions below are unknown from public docs and are marked
+  as such rather than guessed.
+conventions:
+  authentication:
+    style: OAuth2 client-credentials -> JWT Bearer
+    token_endpoint: https://api.moveinsync.com/auth/token
+    token_ttl_seconds: 86400
+    header: 'Authorization: Bearer <jwt>'
+    ref: authentication/moveinsync-authentication.yml
+  base_host: https://api.moveinsync.com
+  webhooks:
+    supported: true
+    description: >-
+      JWT-authenticated webhooks are documented alongside the REST APIs; the
+      Rentlz vendor-integration flow logs driver events (duty start/end, trip
+      start/end) and booking accept/reject responses.
+    ref: asyncapi/moveinsync-webhooks.yml
+  idempotency:
+    documented: false
+    notes: No idempotency-key contract is documented on the public help center.
+  pagination:
+    documented: false
+  versioning:
+    documented: false
+    notes: No public API versioning/deprecation policy located.
+  error_envelope:
+    documented: false
+    notes: Public help-center articles are bot-gated; error shape not captured.
+  rate_limiting:
+    documented: false

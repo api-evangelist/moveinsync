@@ -1,9 +1,30 @@
 aid: moveinsync
 name: MoveInSync
-description: 'MoveInSync is a company surfaced as a portfolio company of bessemer-venture-partners and
-  added to the API Evangelist network as a stub for enrichment. Sector: vertical-software. This profile
-  is a lead awaiting the enrichment pipeline.'
+description: >-
+  MoveInSync is an enterprise employee-commute and workplace-management SaaS
+  platform. It automates end-to-end corporate transportation — fixed-route
+  shuttles, flexi rideshare, on-demand campus rides, corporate carpool, parking
+  management, and the WorkInSync hybrid-workplace suite — with smart routing,
+  live tracking, safety workflows, and billing. The platform serves more than
+  1M commuters across 100,000+ vehicles in 39 countries for 400+ enterprises,
+  including 112+ Fortune 500 companies. MoveInSync exposes a JWT-authenticated
+  REST and webhook integration API at api.moveinsync.com, including the Rentlz
+  booking-management APIs used by external transport vendors. Backed by Bessemer
+  Venture Partners.
 url: https://raw.githubusercontent.com/api-evangelist/moveinsync/refs/heads/main/apis.yml
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://moveinsync.com/wp-content/uploads/2023/01/cropped-header-logo-270x270.png
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
@@ -12,16 +33,74 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
 - Vertical Software
-apis: []
+- Transportation
+- Employee Commute
+- Mobility
+- Fleet Management
+- Parking
+- Workplace Management
+- Ridesharing
+- Logistics
+apis:
+- name: MoveInSync Integration API
+  description: >-
+    JWT-authenticated REST and webhook API for employee-transport integration.
+    Partners authenticate at api.moveinsync.com/auth/token (OAuth2
+    client-credentials over HTTP Basic) to obtain a 24-hour JWT, then call the
+    APIs and receive webhooks with it as a Bearer token. Includes the Rentlz
+    booking-management APIs for external transport vendors (cab/driver
+    assignment, driver-event logging, booking accept/reject).
+  humanURL: https://helpcenter.moveinsync.com/support/solutions
+  baseURL: https://api.moveinsync.com
+  properties:
+  - type: Authentication
+    url: authentication/moveinsync-authentication.yml
+  - type: Documentation
+    url: https://helpcenter.moveinsync.com/support/solutions/articles/1070000134479-auth-api
+  - type: Webhooks
+    url: asyncapi/moveinsync-webhooks.yml
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: Authentication
+  url: authentication/moveinsync-authentication.yml
+- type: Conventions
+  url: conventions/moveinsync-conventions.yml
+- type: Webhooks
+  url: asyncapi/moveinsync-webhooks.yml
+- type: Conformance
+  url: conformance/moveinsync-conformance.yml
+- type: Compliance
+  url: https://moveinsync.com/us
+- type: LLMsTxt
+  url: llms/moveinsync-llms.txt
+- type: WellKnown
+  url: well-known/moveinsync-well-known.yml
+- type: DomainSecurity
+  url: security/moveinsync-domain-security.yml
+- type: DeveloperPortal
+  url: https://helpcenter.moveinsync.com/support/home
+- type: Documentation
+  url: https://helpcenter.moveinsync.com/support/solutions
+- type: Support
+  url: https://helpcenter.moveinsync.com/support/home
+- type: Blog
+  url: https://moveinsync.com/blog
+- type: PrivacyPolicy
+  url: https://moveinsync.com/privacy-policy
+- type: TermsOfService
+  url: https://moveinsync.com/terms-of-use
 - type: Website
   url: https://moveinsync.com/
+x-enrichment:
+  date: '2026-07-20'
+  status: enriched
+  artifacts_added: 7
+  pass: local-v1

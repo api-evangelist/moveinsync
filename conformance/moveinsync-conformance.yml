@@ -1,0 +1,32 @@
+generated: '2026-07-20'
+method: searched
+source: https://moveinsync.com/us
+notes: >-
+  MoveInSync publishes an enterprise-grade compliance posture on its product
+  site. Certifications below are stated by the vendor on public marketing/
+  product pages; they are not independently verified here.
+standards:
+  - id: iso-27001
+    name: ISO/IEC 27001 (Information Security Management)
+    conforms: true
+    evidence: Listed as a certification on moveinsync.com product pages
+  - id: iso-27701
+    name: ISO/IEC 27701 (Privacy Information Management)
+    conforms: true
+    evidence: Listed as a certification on moveinsync.com product pages
+  - id: soc2
+    name: SOC 2
+    conforms: true
+    evidence: Listed as a compliance attestation on moveinsync.com product pages
+  - id: gdpr
+    name: GDPR
+    conforms: true
+    evidence: Stated GDPR compliance on moveinsync.com product pages
+  - id: oauth2-client-credentials
+    name: OAuth 2.0 client-credentials grant
+    conforms: true
+    evidence: Token endpoint at api.moveinsync.com/auth/token uses grant_type=client_credentials
+  - id: jwt
+    name: JSON Web Token (RFC 7519)
+    conforms: true
+    evidence: Auth API issues JWT access tokens for API/webhook calls

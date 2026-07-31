@@ -1,0 +1,35 @@
+generated: '2026-07-20'
+method: searched
+source: https://helpcenter.moveinsync.com/support/solutions/articles/1070000134479-auth-api
+docs: https://helpcenter.moveinsync.com/support/solutions/articles/1070000134479-auth-api
+summary:
+  types: [http, oauth2]
+  description: >-
+    MoveInSync exposes a two-legged machine-to-machine auth flow. Integration
+    partners exchange an issued username/password (HTTP Basic) with an OAuth2
+    client-credentials grant at the token endpoint to obtain a JWT access
+    token, then present that JWT as a Bearer token on all API and webhook
+    calls. Tokens expire every 24 hours and must be refreshed.
+schemes:
+  - name: BasicAuth
+    type: http
+    scheme: basic
+    used_for: token issuance
+    endpoint: https://api.moveinsync.com/auth/token
+    grant_type: client_credentials
+    notes: >-
+      Username and password are provisioned by MoveInSync for production
+      access. Posted to the token endpoint with grant_type=client_credentials.
+    sources: [https://helpcenter.moveinsync.com/support/solutions/articles/1070000134479-auth-api]
+  - name: BearerJWT
+    type: http
+    scheme: bearer
+    bearerFormat: JWT
+    used_for: API and webhook calls
+    token_ttl_seconds: 86400
+    notes: >-
+      The JWT returned by the token endpoint is sent in the Authorization
+      header as `Bearer <token>` on subsequent API requests. Expires every
+      24 hours.
+    sources: [https://helpcenter.moveinsync.com/support/solutions/articles/1070000134479-auth-api]
+host: https://api.moveinsync.com
