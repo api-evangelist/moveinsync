@@ -1,0 +1,29 @@
+# Front Door AI Index — moveinsync — 2026-09-17
+# AI vocabulary counted on the provider's root page. Generated; do not edit.
+# `score` is null unless ownership is `own` — see front_door_ai.py.
+front_door_ai:
+  slug: moveinsync
+  lexicon_version: '1.0'
+  probed_at: '2026-09-17'
+  host: moveinsync.com
+  final_host: moveinsync.com
+  ownership: own
+  owner: moveinsync
+  shares_host_with: null
+  inherited_from: null
+  verdict: scored
+  score: 6
+  host_score: 6
+  density: 4.86
+  words: 1234
+  tiers:
+    agentic: 0
+    core: 6
+    model: 0
+  ambiguous: 6
+  top_terms:
+    AI: 4
+    artificial intelligence: 2
+    automation: 2
+    intelligence: 2
+    smart: 2
