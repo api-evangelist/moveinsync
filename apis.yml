@@ -54,7 +54,6 @@ tags:
 - Fleet Management
 - Parking
 - Workplace Management
-- Ridesharing
 - Logistics
 apis:
 - name: MoveInSync Integration API
@@ -115,3 +114,5 @@ x-enrichment:
   status: enriched
   artifacts_added: 7
   pass: local-v1
+x-tags-removed:
+- Ridesharing
