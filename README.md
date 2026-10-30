@@ -64,6 +64,96 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-MoveInSync is a company surfaced as a portfolio company of bessemer-venture-partners and added to the API Evangelist network as a stub for enrichment. Sector: vertical-software. This profile is a lead awaiting the enrichment pipeline.
+MoveInSync is an enterprise employee-commute and workplace-management SaaS platform. It automates end-to-end corporate transportation — fixed-route shuttles, flexi rideshare, on-demand campus rides, corporate carpool, parking management, and the WorkInSync hybrid-workplace suite — with smart routing, live tracking, safety workflows, and billing. The platform serves more than 1M commuters across 100,000+ vehicles in 39 countries for 400+ enterprises, including 112+ Fortune 500 companies. MoveInSync exposes a JWT-authenticated REST and webhook integration API at api.moveinsync.com, including the Rentlz booking-management APIs used by external transport vendors. Backed by Bessemer Venture Partners.
 
-Backed by: bessemer-venture-partners — https://moveinsync.com/
+**Areas:** Company · Vertical Software · Transportation · Employee Commute · Mobility · Fleet Management · Parking · Workplace Management · Logistics
+
+## MoveInSync on APIs.io
+
+Everything profiled for MoveInSync is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/moveinsync/](https://apis.io/providers/moveinsync/)** — or go straight to one of the APIs or properties below.
+
+### APIs (1)
+
+- [MoveInSync Integration API](https://apis.io/apis/moveinsync/moveinsync-integration-api/) — JWT-authenticated REST and webhook API for employee-transport integration. Partners authenticate at api.moveinsync.com/auth/token (OAuth2 client-credentials…
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### AsyncAPI (1)
+
+Event-driven and webhook contracts.
+
+- [Moveinsync Webhooks](https://apis.io/asyncapis/moveinsync/moveinsync-webhooks/)
+
+#### Security (2)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Moveinsync Authentication](https://apis.io/security/moveinsync/moveinsync-authentication/)
+- [Moveinsync Domain Security](https://apis.io/security/moveinsync/moveinsync-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://moveinsync.com/)
+- [Documentation](https://helpcenter.moveinsync.com/support/solutions)
+- [Support](https://helpcenter.moveinsync.com/support/home)
+- [Blog](https://moveinsync.com/blog)
+- [Compliance](https://moveinsync.com/us)
+- [Terms of service](https://moveinsync.com/terms-of-use)
+- [Privacy policy](https://moveinsync.com/privacy-policy)
+
+## API Evangelist rating
+
+**Kin Score 35.8** — thin · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 73.2 |
+| Contract quality | 39.0 |
+| Contract governance | 18.2 |
+| Operational transparency | 7.9 |
+| Developer ergonomics | 38.1 |
+| Access clarity | 28.9 |
+
+**Agent readiness 19.8** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | yes |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 29.4** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/moveinsync/](https://apis.io/providers/moveinsync/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for MoveInSync: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/moveinsync/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
